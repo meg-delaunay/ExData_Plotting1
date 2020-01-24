@@ -11,8 +11,8 @@ plot_data <- data.frame(dt_asDate, as.numeric(as.character(data_on_dates$Sub_met
 names(plot_data) <- c('date', 'submeter1', 'submeter2', 'submeter3')
 
 plot(plot_data$date, plot_data$submeter1 ,type="l",col="black", xlab='', ylab="Enery sub metering")
-lines(plot_data$date,plot_data$submeter2,col="blue")
-lines(plot_data$date,plot_data$submeter3,col="red")
-legend("topright", legend=c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'), col=c('black', 'blue', 'red'), lty=1)
+lines(plot_data$date,plot_data$submeter2,col="red")
+lines(plot_data$date,plot_data$submeter3,col="blue")
+legend("topright", legend=c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'), col=c('black', 'red', 'blue'), lty=1)
 
 dev.off()
